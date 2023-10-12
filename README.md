@@ -2,11 +2,13 @@
 
 This is a work in progress. The todo items will grow as it continuous or as needed basis.
 
-> ToDo Items
+> Task List
 
-1. [x] Create Header
-   - [x] Add Store Logo
-   - [x] Create Navigation
+Lists of tasks that are done, and those that need to be done.
+
+1. [x] ~~Create Header~~
+   - [x] ~~Add Store Logo~~
+   - [x] ~~Create Navigation~~
    - [ ] Add Login, Register and Cart icons
 2. [ ] Hero Section
 3. [ ] Latest Products
