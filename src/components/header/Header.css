@@ -33,9 +33,12 @@
 }
 
 .header-container .header .navigation ul li a {
+  color: #000;
+  text-decoration: none;
 }
 
 .header-container .header .navigation ul li a:hover {
+  text-decoration: underline;
 }
 
 .header-container .header .secondary-navigation {
@@ -54,7 +57,10 @@
 }
 
 .header-container .header .secondary-navigation ul li a {
+  color: #000;
+  text-decoration: none;
 }
 
 .header-container .header .secondary-navigation ul li a:hover {
+  text-decoration: underline;
 }

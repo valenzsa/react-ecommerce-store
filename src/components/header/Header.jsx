@@ -10,17 +10,45 @@ const Header = () => {
         </div>
         <div className="navigation">
           <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li>
+              <a href="#" title="Home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Products">
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#" title="About">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Contact">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
         <div className="secondary-navigation">
           <ul>
-            <li>Login</li>
-            <li>Register</li>
-            <li>Cart</li>
+            <li>
+              <a href="#" title="Login">
+                Login
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Register">
+                Register
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Cart">
+                Cart
+              </a>
+            </li>
           </ul>
         </div>
       </div>

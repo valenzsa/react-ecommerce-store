@@ -4,9 +4,9 @@ This is a work in progress. The todo items will grow as it continuous or as need
 
 > ToDo Items
 
-1. [ ] Create Header
-   - [ ] Add Store Logo
-   - [ ] Create Navigation
+1. [x] Create Header
+   - [x] Add Store Logo
+   - [x] Create Navigation
    - [ ] Add Login, Register and Cart icons
 2. [ ] Hero Section
 3. [ ] Latest Products
