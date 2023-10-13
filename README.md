@@ -11,12 +11,19 @@ Lists of tasks that are done, and those that need to be done.
    - [x] ~~Create Navigation~~
    - [ ] Add Login, Register and Cart icons
 2. [ ] Hero Section
-3. [ ] Latest Products
+3. [ ] Create Footer
+4. [ ] Latest Products
    - [ ] Tab Component
      - [ ] Card Component
-4. [ ] Category
+5. [ ] Shop By Category
+6. [ ] Category
    - [ ] Breadcrumb
-5. [ ] Create Footer
+   - [ ] Filters
+   - [ ] Card Component
+7. [ ] Product Details Page
+8. [ ] Cart Page
+9. [ ] Wishlist
+10. [ ] Admin Page
 
 ## Resources
 
