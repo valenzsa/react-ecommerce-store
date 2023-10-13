@@ -1,5 +1,6 @@
 import "./Header.css";
 import logo from "../../assets/fashion-store-logo.png";
+import { FaSignInAlt, FaUserPlus, FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -36,17 +37,17 @@ const Header = () => {
           <ul>
             <li>
               <a href="#" title="Login">
-                Login
+                <FaSignInAlt /> Login
               </a>
             </li>
             <li>
               <a href="#" title="Register">
-                Register
+                <FaUserPlus /> Register
               </a>
             </li>
             <li>
               <a href="#" title="Cart">
-                Cart
+                <FaShoppingCart /> Cart
               </a>
             </li>
           </ul>
