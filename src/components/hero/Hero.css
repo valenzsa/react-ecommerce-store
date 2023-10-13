@@ -2,8 +2,40 @@
 }
 
 .hero-container .hero {
+  position: relative;
 }
 
+.hero-container .hero .hero-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.hero-container .hero .hero-content p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  width: fit-content;
+}
+.hero-container .hero .hero-content h1 {
+  font-size: 50px;
+  width: fit-content;
+}
+.hero-container .hero .hero-content button {
+  border: 0 none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  width: fit-content;
+  cursor: pointer;
+}
+.hero-container .hero .hero-content button:hover {
+}
 .hero-container .hero img {
   width: 100%;
 }
