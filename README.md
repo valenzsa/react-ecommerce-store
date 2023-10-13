@@ -25,7 +25,9 @@ Lists of tasks that are done, and those that need to be done.
 7. [ ] Product Details Page
 8. [ ] Cart Page
 9. [ ] Wishlist
-10. [ ] Admin Page
+10. [ ] Login Page
+11. [ ] Register Page
+12. [ ] Admin Page
 
 ## Resources
 
