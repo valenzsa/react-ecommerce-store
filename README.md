@@ -9,7 +9,7 @@ Lists of tasks that are done, and those that need to be done.
 1. [x] ~~Create Header~~
    - [x] ~~Add Store Logo~~
    - [x] ~~Create Navigation~~
-   - [x] ~~Add Login, Register and Cart icons
+   - [x] ~~Add Login, Register and Cart icons~~
 2. [ ] Hero Section
 3. [ ] Create Footer
 4. [ ] Latest Products
