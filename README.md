@@ -11,6 +11,8 @@ Lists of tasks that are done, and those that need to be done.
    - [x] ~~Create Navigation~~
    - [x] ~~Add Login, Register and Cart icons~~
 2. [ ] Hero Section
+   - [x] ~~Single Hero Image~~
+   - [ ] Create Hero Slider
 3. [ ] Create Footer
 4. [ ] Latest Products
    - [ ] Tab Component
@@ -23,7 +25,9 @@ Lists of tasks that are done, and those that need to be done.
 7. [ ] Product Details Page
 8. [ ] Cart Page
 9. [ ] Wishlist
-10. [ ] Admin Page
+10. [ ] Login Page
+11. [ ] Register Page
+12. [ ] Admin Page
 
 ## Resources
 
