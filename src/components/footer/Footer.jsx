@@ -20,49 +20,49 @@ const Footer = () => {
           <p className="copyright">&copy; 2023, Fashion Store</p>
           <ul className="social-media">
             <li>
-              <a href="#" title="">
+              <a href="#" title="Instagram">
                 <FaInstagram />
               </a>
             </li>
             <li>
-              <a href="#" title="">
+              <a href="#" title="Facebook">
                 <FaFacebook />
               </a>
             </li>
             <li>
-              <a href="#" title="">
+              <a href="#" title="Twitter">
                 <FaTwitter />
               </a>
             </li>
             <li>
-              <a href="#" title="">
+              <a href="#" title="Youtube">
                 <FaYoutube />
               </a>
             </li>
           </ul>
           <ul className="payment">
             <li>
-              <a href="#" title="">
+              <a href="#" title="American Express">
                 <FaCcAmex />
               </a>
             </li>
             <li>
-              <a href="#" title="">
+              <a href="#" title="Apple Pay">
                 <FaApplePay />
               </a>
             </li>
             <li>
-              <a href="#" title="">
+              <a href="#" title="Google Pay">
                 <FaGooglePay />
               </a>
             </li>
             <li>
-              <a href="#" title="">
+              <a href="#" title="Mastercard">
                 <FaCcMastercard />
               </a>
             </li>
             <li>
-              <a href="#" title="">
+              <a href="#" title="Visa">
                 <FaCcVisa />
               </a>
             </li>
