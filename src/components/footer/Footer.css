@@ -1,0 +1,49 @@
+.footer-container {
+  background-color: #edf2f8;
+}
+.footer-container .footer {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.footer-container .footer .footer-top {
+}
+
+.footer-container .footer .footer-bottom {
+}
+
+.footer-container .footer .footer-bottom p.copyright {
+}
+
+.footer-container .footer .footer-bottom ul.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container .footer .footer-bottom ul.social-media li {
+}
+
+.footer-container .footer .footer-bottom ul.social-media li a {
+}
+.footer-container .footer .footer-bottom ul.social-media li a :hover {
+}
+.footer-container .footer .footer-bottom ul.payment {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container .footer .footer-bottom ul.payment li {
+}
+
+.footer-container .footer .footer-bottom ul.payment li a {
+}
+
+.footer-container .footer .footer-bottom ul.payment li a:hover {
+}
