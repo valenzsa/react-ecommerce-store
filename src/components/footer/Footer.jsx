@@ -15,7 +15,18 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer">
-        <div className="footer-top"></div>
+        <div className="footer-top">
+          <div className="footer-block subscribe">
+            <p>Subscribe to our newsletter</p>
+            <input type="email" value="Enter Your Email Here" />
+            <button type="submit" value="Subscribe">
+              Subscribe
+            </button>
+          </div>
+          <div className="footer-block information"></div>
+          <div className="footer-block shopping"></div>
+          <div className="footer-block contacts"></div>
+        </div>
         <div className="footer-bottom">
           <p className="copyright">&copy; 2023, Fashion Store</p>
           <ul className="social-media">
