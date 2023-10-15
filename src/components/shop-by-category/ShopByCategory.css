@@ -1,0 +1,29 @@
+.shop-by-category-container {
+}
+.shop-by-category-container .shop-by-category {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.shop-by-category-container .shop-by-category h2 {
+  margin-bottom: 20px;
+}
+
+.shop-by-category-container .shop-by-category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shop-by-category-container .shop-by-category ul li {
+}
+
+.shop-by-category-container .shop-by-category ul li a {
+}
