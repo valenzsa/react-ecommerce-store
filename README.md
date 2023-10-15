@@ -1,4 +1,4 @@
-# Building an eCommerce store with ReactJS
+# An eCommerce store with ReactJS
 
 This is a work in progress. The todo items will grow as it continuous or as needed basis.
 
@@ -20,7 +20,10 @@ Lists of tasks that are done, and those that need to be done.
 5. [ ] Shop By Category
 6. [ ] Category
    - [ ] Breadcrumb
-   - [ ] Filters
+   - [ ] Filter system
+   - [ ] Sort By
+     - [ ] Alphabetical
+     - [ ] Price
    - [ ] Card Component
 7. [ ] Product Details Page
 8. [ ] Cart Page
