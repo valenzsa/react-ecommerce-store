@@ -17,15 +17,71 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-top">
           <div className="footer-block subscribe">
-            <p>Subscribe to our newsletter</p>
+            <h3>Subscribe to our newsletter</h3>
             <input type="email" value="Enter Your Email Here" />
             <button type="submit" value="Subscribe">
               Subscribe
             </button>
+            <p>Stay tuned with us!</p>
           </div>
-          <div className="footer-block information"></div>
-          <div className="footer-block shopping"></div>
-          <div className="footer-block contacts"></div>
+          <div className="footer-block information">
+            <h3>Information</h3>
+            <ul>
+              <li>
+                <a href="#" title="">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" title="">
+                  Search
+                </a>
+              </li>
+              <li>
+                <a href="#" title="">
+                  Contacts
+                </a>
+              </li>
+              <li>
+                <a href="#" title="">
+                  Our News
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-block shopping">
+            <h3>Get Shopping</h3>
+            <ul>
+              <li>
+                <a href="#" title="">
+                  Women
+                </a>
+              </li>
+              <li>
+                <a href="#" title="">
+                  Men
+                </a>
+              </li>
+              <li>
+                <a href="#" title="">
+                  Jewelry
+                </a>
+              </li>
+              <li>
+                <a href="#" title="">
+                  Electronics
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-block contacts">
+            <h3>Contacts</h3>
+            <ul>
+              <li>Phone: +1-234-567-8900</li>
+              <li>Email: loremipsum@gmail.com</li>
+              <li>Address: 123 Street Name, City Name, Country Name</li>
+            </ul>
+          </div>
         </div>
         <div className="footer-bottom">
           <p className="copyright">&copy; 2023, Fashion Store</p>
