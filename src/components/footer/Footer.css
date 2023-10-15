@@ -1,0 +1,169 @@
+.footer-container {
+  background-color: #edf2f8;
+}
+.footer-container .footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.footer-container .footer .footer-top {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-container .footer .footer-top .subscribe {
+}
+
+.footer-container .footer .footer-top .subscribe h3 {
+  margin-bottom: 20px;
+}
+
+.footer-container .footer .footer-top .subscribe p {
+}
+
+.footer-container .footer .footer-top .subscribe input {
+  padding: 15px;
+  border-radius: 15px;
+  border: 0 none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, var(--global-box-shadow, 0.14)) !important;
+  margin-bottom: 20px;
+}
+.footer-container .footer .footer-top .subscribe input:active,
+.footer-container .footer .footer-top .subscribe input:focus-visible {
+  border: 0 none;
+}
+
+.footer-container .footer .footer-top .subscribe button {
+  margin-left: -40px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 0 none;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-container .footer .footer-top .information {
+}
+
+.footer-container .footer .footer-top .information h3 {
+  margin-bottom: 20px;
+}
+
+.footer-container .footer .footer-top .information ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .footer .footer-top .information ul li {
+  margin-bottom: 10px;
+}
+
+.footer-container .footer .footer-top .information ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-container .footer .footer-top .information ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-container .footer .footer-top .shopping {
+}
+
+.footer-container .footer .footer-top .shopping h3 {
+  margin-bottom: 20px;
+}
+
+.footer-container .footer .footer-top .shopping ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .footer .footer-top .shopping ul li {
+  margin-bottom: 10px;
+}
+
+.footer-container .footer .footer-top .shopping ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-container .footer .footer-top .shopping ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-container .footer .footer-top .contacts {
+}
+
+.footer-container .footer .footer-top .contacts h3 {
+  margin-bottom: 20px;
+}
+
+.footer-container .footer .footer-top .contacts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .footer .footer-top .contacts ul li {
+  margin-bottom: 10px;
+}
+
+.footer-container .footer .footer-top .contacts ul li a {
+}
+
+.footer-container .footer .footer-top .contacts ul li a:hover {
+}
+
+.footer-container .footer .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer-container .footer .footer-bottom p.copyright {
+}
+
+.footer-container .footer .footer-bottom ul.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.footer-container .footer .footer-bottom ul.social-media li {
+}
+
+.footer-container .footer .footer-bottom ul.social-media li a {
+  font-size: 30px;
+  color: #000;
+}
+.footer-container .footer .footer-bottom ul.social-media li a :hover {
+}
+.footer-container .footer .footer-bottom ul.payment {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.footer-container .footer .footer-bottom ul.payment li {
+}
+
+.footer-container .footer .footer-bottom ul.payment li a {
+  font-size: 30px;
+  color: #000;
+}
+
+.footer-container .footer .footer-bottom ul.payment li a:hover {
+}
