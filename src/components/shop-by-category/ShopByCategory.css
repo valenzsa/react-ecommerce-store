@@ -23,7 +23,16 @@
 }
 
 .shop-by-category-container .shop-by-category ul li {
+  text-align: center;
 }
 
 .shop-by-category-container .shop-by-category ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.shop-by-category-container .shop-by-category ul li a:hover {
+  text-decoration: underline;
+}
+
+.shop-by-category-container .shop-by-category ul li a img {
 }

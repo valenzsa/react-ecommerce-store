@@ -17,7 +17,7 @@ Lists of tasks that are done, and those that need to be done.
 4. [ ] Latest Products
    - [ ] Tab Component
      - [ ] Card Component
-5. [ ] Shop By Category
+5. [x] ~~Shop By Category~~
 6. [ ] Category
    - [ ] Breadcrumb
    - [ ] Filter system
