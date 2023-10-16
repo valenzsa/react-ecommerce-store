@@ -18,7 +18,11 @@ Lists of tasks that are done, and those that need to be done.
    - [ ] Tab Component
      - [ ] Card Component
 5. [x] ~~Shop By Category~~
-6. [ ] Category
+6. [ ] Category Pages
+   - [ ] Create Electronics Page
+   - [ ] Create Jewelry Page
+   - [ ] Create Men's Clothing Page
+   - [ ] Create Women's Clothing Page
    - [ ] Breadcrumb
    - [ ] Filter system
    - [ ] Sort By
