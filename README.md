@@ -29,12 +29,13 @@ Lists of tasks that are done, and those that need to be done.
      - [ ] Alphabetical
      - [ ] Price
    - [ ] Card Component
-7. [ ] Product Details Page
-8. [ ] Cart Page
-9. [ ] Wishlist
-10. [ ] Login Page
-11. [ ] Register Page
-12. [ ] Admin Page
+7. [ ] About Us Page
+8. [ ] Product Details Page
+9. [ ] Cart Page
+10. [ ] Wishlist
+11. [ ] Login Page
+12. [ ] Register Page
+13. [ ] Admin Page
 
 ## Resources
 
