@@ -1,4 +1,4 @@
-const getCategories = [
+const categories = [
   {
     id: 1,
     name: "electronics",
@@ -21,4 +21,4 @@ const getCategories = [
   },
 ];
 
-export default getCategories;
+export default categories;
