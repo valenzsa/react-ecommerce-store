@@ -1,30 +1,37 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { About, Electronics, Home, Jewelry, Men, Women } from "./pages";
+import Layout from "./pages/Layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/electronics",
-    element: <Electronics />,
-  },
-  {
-    path: "/jewelry",
-    element: <Jewelry />,
-  },
-  {
-    path: "/men",
-    element: <Men />,
-  },
-  {
-    path: "/women",
-    element: <Women />,
-  },
-  {
-    path: "/about",
-    element: <About />,
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "electronics",
+        element: <Electronics />,
+      },
+      {
+        path: "jewelry",
+        element: <Jewelry />,
+      },
+      {
+        path: "men",
+        element: <Men />,
+      },
+      {
+        path: "women",
+        element: <Women />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+    ],
   },
 ]);
 

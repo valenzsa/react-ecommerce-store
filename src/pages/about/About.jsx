@@ -1,14 +1,11 @@
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import Hero from "../../components/hero/Hero";
-import ShopByCategory from "../../components/shop-by-category/ShopByCategory";
 
 const About = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <ShopByCategory />
+      <h2>About</h2>
       <Footer />
     </>
   );
