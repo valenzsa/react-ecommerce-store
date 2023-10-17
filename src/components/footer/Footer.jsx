@@ -10,6 +10,7 @@ import {
   FaCcVisa,
 } from "react-icons/fa";
 import "./Footer.css";
+import categories from "../../categoriesData";
 
 const Footer = () => {
   return (
@@ -52,26 +53,15 @@ const Footer = () => {
           <div className="footer-block shopping">
             <h3>Get Shopping</h3>
             <ul>
-              <li>
-                <a href="#" title="">
-                  Women
-                </a>
-              </li>
-              <li>
-                <a href="#" title="">
-                  Men
-                </a>
-              </li>
-              <li>
-                <a href="#" title="">
-                  Jewelry
-                </a>
-              </li>
-              <li>
-                <a href="#" title="">
-                  Electronics
-                </a>
-              </li>
+              {categories.map((category) => {
+                return (
+                  <li key={category.id}>
+                    <a href="#" title={category.name}>
+                      {category.name}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="footer-block contacts">
