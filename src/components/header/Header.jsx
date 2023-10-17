@@ -1,6 +1,7 @@
 import "./Header.css";
 import logo from "../../assets/fashion-store-logo.png";
 import { FaSignInAlt, FaUserPlus, FaShoppingCart } from "react-icons/fa";
+import categories from "../../categoriesData";
 
 const Header = () => {
   return (
@@ -11,26 +12,15 @@ const Header = () => {
         </div>
         <div className="navigation">
           <ul>
-            <li>
-              <a href="#" title="Home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" title="Products">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#" title="About">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" title="Contact">
-                Contact
-              </a>
-            </li>
+            {categories.map((category) => {
+              return (
+                <li key={category.id}>
+                  <a href="#" title={category.name}>
+                    {category.name}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="secondary-navigation">
