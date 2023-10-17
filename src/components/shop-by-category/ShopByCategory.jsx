@@ -1,5 +1,6 @@
 import "./ShopByCategory.css";
 import categories from "../../categoriesData";
+import { Link } from "react-router-dom";
 
 const ShopByCategory = () => {
   return (
@@ -10,10 +11,10 @@ const ShopByCategory = () => {
           {categories.map((category) => {
             return (
               <li key={category.id}>
-                <a href="#" title={category.name}>
+                <Link to={`/${category.linkName}`}>
                   <img src={category.image} alt={category.name} />
                   {category.name}
-                </a>
+                </Link>
               </li>
             );
           })}

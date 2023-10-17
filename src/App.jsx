@@ -1,17 +1,42 @@
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
-import ShopByCategory from "./components/shop-by-category/ShopByCategory";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { About, Electronics, Home, Jewelry, Men, Women } from "./pages";
+import Layout from "./pages/Layout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "electronics",
+        element: <Electronics />,
+      },
+      {
+        path: "jewelry",
+        element: <Jewelry />,
+      },
+      {
+        path: "men",
+        element: <Men />,
+      },
+      {
+        path: "women",
+        element: <Women />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <ShopByCategory />
-      <Footer />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

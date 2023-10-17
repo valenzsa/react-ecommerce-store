@@ -2,22 +2,23 @@ import "./Header.css";
 import logo from "../../assets/fashion-store-logo.png";
 import { FaSignInAlt, FaUserPlus, FaShoppingCart } from "react-icons/fa";
 import categories from "../../categoriesData";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header-container">
       <div className="header">
         <div className="logo">
-          <img src={logo} alt="Fashion Store" />
+          <Link to="/">
+            <img src={logo} alt="Fashion Store" />
+          </Link>
         </div>
         <div className="navigation">
           <ul>
             {categories.map((category) => {
               return (
                 <li key={category.id}>
-                  <a href="#" title={category.name}>
-                    {category.name}
-                  </a>
+                  <Link to={`/${category.linkName}`}>{category.name}</Link>
                 </li>
               );
             })}

@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import "./Footer.css";
 import categories from "../../categoriesData";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,9 +30,7 @@ const Footer = () => {
             <h3>Information</h3>
             <ul>
               <li>
-                <a href="#" title="">
-                  About Us
-                </a>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
                 <a href="#" title="">
@@ -56,9 +55,7 @@ const Footer = () => {
               {categories.map((category) => {
                 return (
                   <li key={category.id}>
-                    <a href="#" title={category.name}>
-                      {category.name}
-                    </a>
+                    <Link to={`/${category.linkName}`}>{category.name}</Link>
                   </li>
                 );
               })}
