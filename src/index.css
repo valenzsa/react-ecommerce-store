@@ -1,3 +1,10 @@
+:root {
+  --color-text-white: #fff;
+  --color-text-black: #000;
+  --color-text-red: #ef262c;
+  --color-background-black: #000;
+  --color-background-white: #fff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +13,22 @@
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container .content-wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-bottom: 100px;
+}
+
+.container .content-wrapper .sidebar {
+  background-color: #eee;
+}
+
+.container .content-wrapper .content-primary {
 }

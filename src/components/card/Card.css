@@ -1,0 +1,50 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card-container .card {
+  width: 200px;
+}
+.card-container .card .card-thumbnail {
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .card .card-thumbnail img {
+  width: 200px;
+}
+
+.card-container .card .card-content {
+  display: flex;
+  flex-direction: column;
+  height: 175px;
+  justify-content: space-between;
+}
+
+.card-container .card .card-content h3 {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card-container .card .card-content .card-rating {
+}
+
+.card-container .card .card-content .card-price {
+  color: var(--color-text-red);
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-container .card .card-content .card-add-to-cart {
+  background-color: var(--color-background-white);
+  color: var(--color-text-black);
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border: 1px solid var(--color-background-black);
+}
+.card-container .card .card-content .card-add-to-cart:hover {
+  background-color: var(--color-background-black);
+  color: var(--color-text-white);
+}
