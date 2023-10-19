@@ -1,9 +1,13 @@
 :root {
-  --color-text-white: #fff;
-  --color-text-black: #000;
+  --color-text-white: #ffffff;
+  --color-text-black: #000000;
   --color-text-red: #ef262c;
-  --color-background-black: #000;
-  --color-background-white: #fff;
+  --color-background-black: #000000;
+  --color-background-gray: #eeeeee;
+  --color-background-gold: #ffd700;
+  --color-background-white: #ffffff;
+
+  --font-family-roboto: "Roboto", sans-serif;
 }
 * {
   margin: 0;
@@ -12,7 +16,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-roboto);
 }
 
 .container {
@@ -27,7 +31,7 @@ body {
 }
 
 .container .content-wrapper .sidebar {
-  background-color: #eee;
+  background-color: var(--color-background-gray);
 }
 
 .container .content-wrapper .content-primary {
