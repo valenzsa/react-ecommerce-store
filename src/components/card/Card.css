@@ -4,7 +4,12 @@
   justify-content: space-evenly;
 }
 .card-container .card {
+  position: relative;
   width: 200px;
+  padding: 10px;
+}
+.card-container .card:hover {
+  background-color: var(--color-background-gray);
 }
 .card-container .card .card-thumbnail {
   height: 320px;
@@ -12,8 +17,13 @@
   justify-content: center;
   align-items: center;
 }
+.card-container .card .card-thumbnail svg {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 .card-container .card .card-thumbnail img {
-  width: 200px;
+  width: 100%;
 }
 
 .card-container .card .card-content {
@@ -26,6 +36,28 @@
 .card-container .card .card-content h3 {
   font-weight: normal;
   font-size: 14px;
+}
+
+.card-container .card .card-content .rating {
+  display: flex;
+  flex-direction: row;
+}
+.card-container .card .card-content .rating .stars {
+  display: flex;
+  flex-direction: row;
+}
+.card-container .card .card-content .rating .stars .star {
+}
+.card-container .card .card-content .rating .stars .star svg {
+}
+
+.card-container .card .card-content .rating .stars .star svg path {
+  fill: var(--color-background-gold);
+}
+
+.card-container .card .card-content .rating .stars .star.filled {
+  display: flex;
+  align-items: center;
 }
 
 .card-container .card .card-content .card-rating {
