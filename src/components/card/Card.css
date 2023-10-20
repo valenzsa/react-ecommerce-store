@@ -1,15 +1,18 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  gap: 15px;
 }
 .card-container .card {
   position: relative;
   width: 200px;
   padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
 }
 .card-container .card:hover {
   background-color: var(--color-background-gray);
+  border: 1px solid #ccc;
 }
 .card-container .card .card-thumbnail {
   height: 320px;
