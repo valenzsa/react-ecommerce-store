@@ -28,6 +28,7 @@ body {
   display: grid;
   grid-template-columns: 25% 75%;
   margin-bottom: 100px;
+  gap: 15px;
 }
 
 .container .content-wrapper .sidebar {
