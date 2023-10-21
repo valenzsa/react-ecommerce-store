@@ -29,10 +29,13 @@ Lists of tasks that are done, and those that need to be done.
      - [ ] Alphabetical
      - [ ] Price
    - [ ] Card Component
+     - [ ] Add Wishlist button
+     - [ ] Add Quick View
+     - [ ] Add Product Ribbon (On Sale, New, Out of Stock etc.)
 7. [ ] About Us Page
 8. [ ] Product Details Page
 9. [ ] Cart Page
-10. [ ] Wishlist
+10. [ ] Wishlist Page
 11. [ ] Login Page
 12. [ ] Register Page
 13. [ ] Admin Page
