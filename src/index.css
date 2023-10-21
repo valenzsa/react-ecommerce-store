@@ -3,8 +3,10 @@
   --color-text-black: #000000;
   --color-text-red: #ef262c;
   --color-background-black: #000000;
-  --color-background-gray: #eeeeee;
+  --color-background-light-gray: #eeeeee;
+  --color-background-gray: #cccccc;
   --color-background-gold: #ffd700;
+  --color-background-red: #ef262c;
   --color-background-white: #ffffff;
 
   --font-family-roboto: "Roboto", sans-serif;
@@ -32,7 +34,7 @@ body {
 }
 
 .container .content-wrapper .sidebar {
-  background-color: var(--color-background-gray);
+  background-color: var(--color-background-light-gray);
 }
 
 .container .content-wrapper .content-primary {
