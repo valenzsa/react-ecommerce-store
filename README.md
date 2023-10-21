@@ -42,4 +42,5 @@ Lists of tasks that are done, and those that need to be done.
 
 ## Resources
 
+[ReactJS](https://react.dev/)
 [Fake Store API](https://fakestoreapi.com/)
