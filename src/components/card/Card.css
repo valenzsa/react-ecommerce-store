@@ -7,23 +7,35 @@
   position: relative;
   width: 200px;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-background-light-gray);
   border-radius: 10px;
 }
 .card-container .card:hover {
-  background-color: var(--color-background-gray);
-  border: 1px solid #ccc;
+  background-color: var(--color-background-light-gray);
+  border: 1px solid var(--color-background-gray);
 }
 .card-container .card .card-thumbnail {
-  height: 320px;
+  height: 285px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card-container .card .card-thumbnail svg {
+.card-container .card .card-thumbnail .wishlist {
   position: absolute;
   right: 10px;
   top: 10px;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+}
+.card-container .card .card-thumbnail svg.wishlist {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.card-container .card .card-thumbnail svg.wishlist:hover path {
+  fill: var(--color-background-red);
 }
 .card-container .card .card-thumbnail img {
   width: 100%;
@@ -78,6 +90,7 @@
   display: block;
   width: 100%;
   border: 1px solid var(--color-background-black);
+  border-radius: 10px;
 }
 .card-container .card .card-content .card-add-to-cart:hover {
   background-color: var(--color-background-black);
