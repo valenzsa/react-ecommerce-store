@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Footer from "../../../components/footer/Footer";
 import Header from "../../../components/header/Header";
 import Card from "../../../components/card/Card";
+import Sidebar from "../../../components/sidebar/Sidebar";
 
 const Electronics = () => {
   const [electronics, setElectronics] = useState([]);
@@ -29,7 +30,7 @@ const Electronics = () => {
       <div className="container">
         <h2>Electronics</h2>
         <div className="content-wrapper">
-          <div className="sidebar">Left Column</div>
+          <Sidebar />
           <div className="content-primary">
             <Card category={electronics} />
           </div>
