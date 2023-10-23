@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Footer from "../../../components/footer/Footer";
 import Header from "../../../components/header/Header";
 import Card from "../../../components/card/Card";
+import Sidebar from "../../../components/sidebar/Sidebar";
 
 const Women = () => {
   const [womens, setWomens] = useState([]);
@@ -28,7 +29,7 @@ const Women = () => {
       <div className="container">
         <h2>Women's Clothing</h2>
         <div className="content-wrapper">
-          <div className="sidebar">Left Column</div>
+          <Sidebar />
           <div className="content-primary">
             <Card category={womens} />
           </div>

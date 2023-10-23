@@ -13,7 +13,7 @@
 }
 .card-container .card:hover {
   background-color: var(--color-background-white);
-  border: 1px solid var(--color-background-gray);
+  border: 1px solid var(--color-background-accent);
 }
 .card-container .card .card-thumbnail {
   height: 285px;
@@ -89,20 +89,21 @@
 }
 
 .card-container .card .card-content .card-price {
-  color: var(--color-text-red);
+  color: var(--color-text-price);
   font-size: 20px;
   font-weight: bold;
 }
 .card-container .card .card-content .card-add-to-cart {
-  background-color: var(--color-background-white);
-  color: var(--color-text-black);
+  background-color: var(--color-background-accent);
+  color: var(--color-text-white);
   padding: 10px;
   display: block;
   width: 100%;
-  border: 1px solid var(--color-background-black);
+  border: 1px solid var(--color-background-accent);
   border-radius: 10px;
+  cursor: pointer;
 }
 .card-container .card .card-content .card-add-to-cart:hover {
-  background-color: var(--color-background-black);
+  background-color: var(--color-background-accent-hover);
   color: var(--color-text-white);
 }

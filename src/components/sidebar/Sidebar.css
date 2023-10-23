@@ -1,0 +1,23 @@
+.sidebar {
+}
+
+.sidebar .filter-block {
+  margin-bottom: 20px;
+}
+
+.sidebar .filter-block h5 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.sidebar .filter-block ul {
+  list-style: none;
+}
+
+.sidebar .filter-block ul li {
+  margin-bottom: 5px;
+}
+
+.sidebar .filter-block ul li input {
+  cursor: pointer;
+}
