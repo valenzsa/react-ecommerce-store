@@ -3,7 +3,7 @@ import { FaStar, FaHeart, FaRegHeart } from "react-icons/fa";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import "../card/Card.css";
 
-const Card = ({ electronics }) => {
+const Card = ({ category }) => {
   const [wishList, setWishList] = useState(false);
   const wishListRef = useRef(null);
 
