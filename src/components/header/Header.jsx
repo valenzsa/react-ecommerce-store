@@ -1,5 +1,5 @@
 import "./Header.css";
-import logo from "../../assets/fashion-store-logo.png";
+import logo from "../../assets/fashion-store-logo.jpg";
 import { FaSignInAlt, FaUserPlus, FaShoppingCart } from "react-icons/fa";
 import categories from "../../categoriesData";
 import { Link } from "react-router-dom";

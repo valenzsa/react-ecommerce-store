@@ -2,12 +2,15 @@
   --color-text-white: #ffffff;
   --color-text-black: #000000;
   --color-text-red: #ef262c;
+  --color-text-price: #df8c4f;
   --color-background-black: #000000;
   --color-background-light-gray: #eeeeee;
   --color-background-gray: #cccccc;
   --color-background-gold: #ffd700;
   --color-background-red: #ef262c;
   --color-background-white: #ffffff;
+  --color-background-accent-hover: #df8c4f;
+  --color-background-accent: #f59a57;
 
   --font-family-roboto: "Roboto", sans-serif;
 }
