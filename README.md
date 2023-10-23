@@ -19,12 +19,15 @@ Lists of tasks that are done, and those that need to be done.
      - [ ] Card Component
 5. [x] ~~Shop By Category~~
 6. [ ] Category Pages
-   - [ ] Create Electronics Page
-   - [ ] Create Jewelry Page
-   - [ ] Create Men's Clothing Page
-   - [ ] Create Women's Clothing Page
+   - [x] Create Electronics Page
+   - [x] Create Jewelry Page
+   - [x] Create Men's Clothing Page
+   - [x] Create Women's Clothing Page
    - [ ] Breadcrumb
    - [ ] Filter system
+     - [ ] Filter By Reviews
+     - [ ] Filter By Price
+     - [ ] Filter By Product Status
    - [ ] Sort By
      - [ ] Alphabetical
      - [ ] Price
