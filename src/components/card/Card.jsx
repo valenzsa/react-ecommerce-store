@@ -4,6 +4,8 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import "../card/Card.css";
 
 const Card = ({ category }) => {
+  console.log("category");
+  console.log(category);
   const [wishList, setWishList] = useState(false);
   const wishListRef = useRef(null);
 
@@ -49,29 +51,33 @@ const Card = ({ category }) => {
 
   return (
     <div className="card-container">
-      {electronics.map((electronic) => {
+      {category.map((cat) => {
         return (
-          <div className="card" key={electronic.id} id={electronic.id}>
+          <div className="card" key={cat.id} id={cat.id}>
             <div className="card-thumbnail">
               <div
                 className="wishlist"
                 ref={wishListRef}
-                // onMouseOver={() => setWishList(electronic.id)}
-                // onMouseOut={() => setWishList(electronic.id)}
+                // onMouseOver={() => setWishList(cat.id)}
+                // onMouseOut={() => setWishList(cat.id)}
 
-                onMouseEnter={() => myWishList(electronic.id)}
-                //onMouseOut={() => myWishList(electronic.id)}
+                onMouseEnter={() => myWishList(cat.id)}
+                //onMouseOut={() => myWishList(cat.id)}
               >
                 {wishList ? <AiFillHeart /> : <AiOutlineHeart />}
               </div>
 
-              <img src={electronic.image} alt={electronic.title} />
+              <img src={cat.image} alt={cat.title} />
             </div>
             <div className="card-content">
-              <h3>{electronic.title.substring(0, 40)}...</h3>
+              <h3>
+                <a href="#" title={cat.title}>
+                  {cat.title.substring(0, 40)}...
+                </a>
+              </h3>
               <div className="rating">
-                {/* {Math.floor(electronic.rating.rate)} */}
-                {electronic.rating.rate}
+                {/* {Math.floor(cat.rating.rate)} */}
+                {cat.rating.rate}
                 <div className="stars">
                   <div className="star">
                     <FaStar />
@@ -79,10 +85,7 @@ const Card = ({ category }) => {
                 </div>
               </div>
               <div className="card-price">
-                $
-                {hasDecimal(electronic.price)
-                  ? electronic.price
-                  : electronic.price + ".00"}
+                ${hasDecimal(cat.price) ? cat.price : cat.price + ".00"}
               </div>
               <button className="card-add-to-cart">Add To Cart</button>
             </div>

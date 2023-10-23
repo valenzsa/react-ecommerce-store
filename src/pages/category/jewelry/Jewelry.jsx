@@ -31,7 +31,7 @@ const Jewelry = () => {
         <div className="content-wrapper">
           <div className="sidebar">Left Column</div>
           <div className="content-primary">
-            <Card jewelries={jewelries} />
+            <Card category={jewelries} />
           </div>
         </div>
       </div>

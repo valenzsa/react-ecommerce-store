@@ -54,6 +54,15 @@
   font-size: 14px;
 }
 
+.card-container .card .card-content h3 a {
+  color: var(--color-text-black);
+  text-decoration: none;
+}
+
+.card-container .card .card-content h3 a:hover {
+  text-decoration: underline;
+}
+
 .card-container .card .card-content .rating {
   display: flex;
   flex-direction: row;

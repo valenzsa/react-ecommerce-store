@@ -31,7 +31,7 @@ const Electronics = () => {
         <div className="content-wrapper">
           <div className="sidebar">Left Column</div>
           <div className="content-primary">
-            <Card electronics={electronics} />
+            <Card category={electronics} />
           </div>
         </div>
       </div>
