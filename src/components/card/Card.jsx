@@ -55,16 +55,18 @@ const Card = ({ category }) => {
         return (
           <div className="card" key={cat.id} id={cat.id}>
             <div className="card-thumbnail">
-              <div
-                className="wishlist"
-                ref={wishListRef}
-                // onMouseOver={() => setWishList(cat.id)}
-                // onMouseOut={() => setWishList(cat.id)}
+              <div className="product-buttons">
+                <div
+                  className="wishlist"
+                  ref={wishListRef}
+                  // onMouseOver={() => setWishList(cat.id)}
+                  // onMouseOut={() => setWishList(cat.id)}
 
-                onMouseEnter={() => myWishList(cat.id)}
-                //onMouseOut={() => myWishList(cat.id)}
-              >
-                {wishList ? <AiFillHeart /> : <AiOutlineHeart />}
+                  onMouseEnter={() => myWishList(cat.id)}
+                  //onMouseOut={() => myWishList(cat.id)}
+                >
+                  {wishList ? <AiFillHeart /> : <AiOutlineHeart />}
+                </div>
               </div>
 
               <img src={cat.image} alt={cat.title} />
