@@ -1,23 +1,23 @@
-import { Link } from "react-router-dom";
-import "../breadcrumb/Breadcrumb.css";
+import { Link, useLocation } from "react-router-dom";
 
-const Breadcrumb = (electronics) => {
-  console.log("breadcrumb");
-  console.log(electronics);
+import "../breadcrumb/Breadcrumb.css";
+import { AiOutlineRight } from "react-icons/ai";
+
+const Breadcrumb = () => {
+  const location = useLocation();
+
   return (
     <div className="breadcrumb">
       <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
-
-        {electronics.map((electronic) => {
-          return (
-            <li>
-              <Link to={electronic.category}>{electronic.category}</Link>
-            </li>
-          );
-        })}
+        <li>
+          <AiOutlineRight />
+        </li>
+        <li>
+          <Link to={location.pathname}>{location.pathname.split("/")}</Link>
+        </li>
       </ul>
     </div>
   );

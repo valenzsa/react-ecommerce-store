@@ -1,0 +1,25 @@
+.breadcrumb {
+}
+.breadcrumb ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.breadcrumb ul li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb ul li a {
+  list-style: none;
+  color: var(--color-text-black);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
