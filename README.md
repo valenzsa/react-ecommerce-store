@@ -23,7 +23,7 @@ Lists of tasks that are done, and those that need to be done.
    - [x] ~~Create Jewelry Page~~
    - [x] ~~Create Men's Clothing Page~~
    - [x] ~~Create Women's Clothing Page~~
-   - [ ] Breadcrumb
+   - [x] ~~Breadcrumb~~
    - [ ] Filter system
      - [ ] Filter By Reviews
      - [ ] Filter By Price
