@@ -29,7 +29,7 @@ const Electronics = () => {
     <>
       <Header />
       <div className="container">
-        <Breadcrumb category={electronics} />
+        <Breadcrumb />
         <h2>Electronics</h2>
         <div className="content-wrapper">
           <Sidebar />
