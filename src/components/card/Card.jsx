@@ -1,13 +1,12 @@
-import { useState, useRef } from "react";
 import { FaStar, FaHeart, FaRegHeart } from "react-icons/fa";
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+
 import "../card/Card.css";
+import Quickview from "./quickview/Quickview";
+import Wishlist from "./wishlist/Wishlist";
 
 const Card = ({ category }) => {
   console.log("category");
   console.log(category);
-  const [wishList, setWishList] = useState(false);
-  const wishListRef = useRef(null);
 
   const hasDecimal = (num) => {
     return num % 1 !== 0;
@@ -29,26 +28,6 @@ const Card = ({ category }) => {
   //   // <AiOutlineHeart />
   // };
 
-  const myWishList = (id) => {
-    console.log(id);
-    console.log(wishListRef);
-    console.log(wishListRef.current.classList.contains("wishlisted"));
-
-    let cardCollection =
-      wishListRef.current.parentElement.parentElement.parentElement.children;
-
-    console.log(typeof cardCollection);
-
-    for (let card of cardCollection) {
-      console.log("card.id is: " + card.id);
-      console.log("id is: " + id);
-      if (card.id == id) {
-        //card.style.backgroundColor = "#ffcc00";
-        card.classList.add("wishlisted");
-      }
-    }
-  };
-
   return (
     <div className="card-container">
       {category.map((cat) => {
@@ -56,17 +35,14 @@ const Card = ({ category }) => {
           <div className="card" key={cat.id} id={cat.id}>
             <div className="card-thumbnail">
               <div className="product-buttons">
-                <div
-                  className="wishlist"
-                  ref={wishListRef}
-                  // onMouseOver={() => setWishList(cat.id)}
-                  // onMouseOut={() => setWishList(cat.id)}
-
-                  onMouseEnter={() => myWishList(cat.id)}
-                  //onMouseOut={() => myWishList(cat.id)}
-                >
-                  {wishList ? <AiFillHeart /> : <AiOutlineHeart />}
-                </div>
+                <ul>
+                  <li>
+                    <Wishlist {...cat} />
+                  </li>
+                  <li>
+                    <Quickview {...cat} />
+                  </li>
+                </ul>
               </div>
 
               <img src={cat.image} alt={cat.title} />

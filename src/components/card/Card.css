@@ -26,22 +26,23 @@
   right: 10px;
   top: 10px;
   cursor: pointer;
-  height: 16px;
   width: 16px;
+  display: flex;
+  flex-direction: column;
 }
-.card-container .card .card-thumbnail .product-buttons .wishlist {
+/* .card-container .card .card-thumbnail .product-buttons .wishlist {
 }
 .card-container .card .card-thumbnail .product-buttons svg.wishlist {
   position: absolute;
   right: 10px;
   top: 10px;
   cursor: pointer;
-}
+} */
 .card-container .card .card-thumbnail .product-buttons .quickview {
 }
-.card-container .card .card-thumbnail .product-buttons svg.wishlist:hover path {
+/* .card-container .card .card-thumbnail .product-buttons svg.wishlist:hover path {
   fill: var(--color-background-red);
-}
+} */
 .card-container .card .card-thumbnail img {
   width: 100%;
 }
