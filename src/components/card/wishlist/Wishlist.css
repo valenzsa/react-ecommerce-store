@@ -1,0 +1,12 @@
+.wishlist {
+}
+.wishlist svg {
+  /* position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer; */
+}
+
+.wishlist svg:hover path {
+  fill: var(--color-background-red);
+}
