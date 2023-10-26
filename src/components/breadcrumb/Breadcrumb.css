@@ -15,6 +15,10 @@
 
 .breadcrumb ul li a {
   list-style: none;
+  color: var(--color-text-black);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 12px;
 }
 .breadcrumb ul li a:hover {
   text-decoration: underline;
