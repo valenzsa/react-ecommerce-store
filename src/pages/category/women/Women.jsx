@@ -3,6 +3,7 @@ import Footer from "../../../components/footer/Footer";
 import Header from "../../../components/header/Header";
 import Card from "../../../components/card/Card";
 import Sidebar from "../../../components/sidebar/Sidebar";
+import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 
 const Women = () => {
   const [womens, setWomens] = useState([]);
@@ -27,6 +28,7 @@ const Women = () => {
     <>
       <Header />
       <div className="container">
+        <Breadcrumb />
         <h2>Women's Clothing</h2>
         <div className="content-wrapper">
           <Sidebar />

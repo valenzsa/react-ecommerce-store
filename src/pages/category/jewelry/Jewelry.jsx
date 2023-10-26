@@ -3,6 +3,7 @@ import Footer from "../../../components/footer/Footer";
 import Header from "../../../components/header/Header";
 import Card from "../../../components/card/Card";
 import Sidebar from "../../../components/sidebar/Sidebar";
+import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 
 const Jewelry = () => {
   const [jewelries, setJewelries] = useState([]);
@@ -28,6 +29,7 @@ const Jewelry = () => {
     <>
       <Header />
       <div className="container">
+        <Breadcrumb />
         <h2>Jewelry</h2>
         <div className="content-wrapper">
           <Sidebar />
