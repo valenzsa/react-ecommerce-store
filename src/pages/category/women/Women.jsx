@@ -4,9 +4,11 @@ import Header from "../../../components/header/Header";
 import Card from "../../../components/card/Card";
 import Sidebar from "../../../components/sidebar/Sidebar";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import Overlay from "../../../components/overlay/Overlay";
 
 const Women = () => {
   const [womens, setWomens] = useState([]);
+  const [isOverlay, setIsOverlay] = useState(false);
 
   const getWomens = async () => {
     try {
@@ -33,11 +35,16 @@ const Women = () => {
         <div className="content-wrapper">
           <Sidebar />
           <div className="content-primary">
-            <Card category={womens} />
+            <Card
+              category={womens}
+              isOverlay={isOverlay}
+              setIsOverlay={setIsOverlay}
+            />
           </div>
         </div>
       </div>
       <Footer />
+      {isOverlay ? <Overlay /> : null}
     </>
   );
 };
