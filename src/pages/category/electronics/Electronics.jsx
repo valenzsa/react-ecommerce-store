@@ -4,9 +4,13 @@ import Header from "../../../components/header/Header";
 import Card from "../../../components/card/Card";
 import Sidebar from "../../../components/sidebar/Sidebar";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import Overlay from "../../../components/overlay/Overlay";
 
 const Electronics = () => {
   const [electronics, setElectronics] = useState([]);
+  const [isOverlay, setIsOverlay] = useState(false);
+  console.log("isOverlay");
+  console.log(isOverlay);
 
   const getElectronics = async () => {
     try {
@@ -34,11 +38,16 @@ const Electronics = () => {
         <div className="content-wrapper">
           <Sidebar />
           <div className="content-primary">
-            <Card category={electronics} />
+            <Card
+              category={electronics}
+              isOverlay={isOverlay}
+              setIsOverlay={setIsOverlay}
+            />
           </div>
         </div>
       </div>
       <Footer />
+      {isOverlay ? <Overlay /> : null}
     </>
   );
 };

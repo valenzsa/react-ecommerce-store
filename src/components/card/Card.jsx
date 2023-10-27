@@ -4,9 +4,15 @@ import "../card/Card.css";
 import Quickview from "./quickview/Quickview";
 import Wishlist from "./wishlist/Wishlist";
 
-const Card = ({ category }) => {
+const Card = ({ category, isOverlay, setIsOverlay }) => {
   console.log("category");
   console.log(category);
+
+  console.log("isOverlay card");
+  console.log(isOverlay);
+
+  console.log("setIsOverlay card");
+  console.log(setIsOverlay);
 
   const hasDecimal = (num) => {
     return num % 1 !== 0;
@@ -40,7 +46,11 @@ const Card = ({ category }) => {
                     <Wishlist {...cat} />
                   </li>
                   <li>
-                    <Quickview {...cat} />
+                    <Quickview
+                      {...cat}
+                      isOverlay={isOverlay}
+                      setIsOverlay={setIsOverlay}
+                    />
                   </li>
                 </ul>
               </div>

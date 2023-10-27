@@ -3,12 +3,29 @@ import { AiOutlineSearch } from "react-icons/ai";
 import "../quickview/Quickview.css";
 import QuickviewContent from "./QuickviewContent";
 
-const Quickview = ({ ...cat }) => {
+const Quickview = ({ isOverlay, setIsOverlay, ...cat }) => {
+  //console.log(isOverlay);
+  //console.log(setIsOverlay);
   const [quickview, setQuickview] = useState(false);
+  //const [isOverlay, setIsOverlay] = useState(false);
+
+  const displayQuickView = () => {
+    setQuickview(true);
+    setIsOverlay(true);
+  };
+
   return (
-    <button onClick={() => setQuickview(true)}>
+    <button onClick={displayQuickView}>
       <AiOutlineSearch />
-      {quickview ? <QuickviewContent {...cat} /> : null}
+      {quickview ? (
+        <QuickviewContent
+          {...cat}
+          isOverlay={isOverlay}
+          setIsOverlay={setIsOverlay}
+          quickview={quickview}
+          setQuickview={setQuickview}
+        />
+      ) : null}
     </button>
   );
 };
