@@ -23,6 +23,7 @@
 body {
   font-family: var(--font-family-roboto);
   /* background: url("./assets/background.jpg"); */
+  overflow-x: hidden;
 }
 
 .container {
