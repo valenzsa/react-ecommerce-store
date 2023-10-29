@@ -9,8 +9,8 @@ import Overlay from "../../../components/overlay/Overlay";
 const Electronics = () => {
   const [electronics, setElectronics] = useState([]);
   const [isOverlay, setIsOverlay] = useState(false);
-  console.log("isOverlay");
-  console.log(isOverlay);
+  //console.log("isOverlay");
+  //console.log(isOverlay);
 
   const getElectronics = async () => {
     try {
