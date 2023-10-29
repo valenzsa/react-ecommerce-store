@@ -7,7 +7,7 @@ import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Overlay from "../../../components/overlay/Overlay";
 
 const Electronics = () => {
-  const [electronics, setElectronics] = useState([]);
+  const [products, setProducts] = useState([]);
   const [isOverlay, setIsOverlay] = useState(false);
   //console.log("isOverlay");
   //console.log(isOverlay);
@@ -19,7 +19,7 @@ const Electronics = () => {
       );
       const data = await response.json();
       //console.log(data);
-      setElectronics(data);
+      setProducts(data);
     } catch (error) {
       console.log(error);
     }
@@ -39,7 +39,7 @@ const Electronics = () => {
           <Sidebar />
           <div className="content-primary">
             <Card
-              category={electronics}
+              products={products}
               isOverlay={isOverlay}
               setIsOverlay={setIsOverlay}
             />

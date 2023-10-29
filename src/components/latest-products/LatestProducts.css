@@ -1,0 +1,30 @@
+.latest-products-container {
+  margin-bottom: 50px;
+}
+.latest-products {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-products h2 {
+  margin-bottom: 20px;
+}
+
+.latest-products .card-container {
+  width: max-content;
+}
+
+.latest-products .card-container .card {
+  width: 275px;
+}
+
+.latest-products .card-container .card .card-thumbnail {
+}
+
+.latest-products .card-container .card .card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  flex-basis: fit-content;
+}
