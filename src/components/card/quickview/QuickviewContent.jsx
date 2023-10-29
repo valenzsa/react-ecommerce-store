@@ -14,6 +14,9 @@ const QuickviewContent = ({
     setIsOverlay(false);
     console.log("closeQuickview");
     setQuickview(false);
+
+    console.log("quickview - QuickviewContent");
+    console.log(quickview);
   };
 
   return (
