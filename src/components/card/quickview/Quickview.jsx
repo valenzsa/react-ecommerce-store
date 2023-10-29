@@ -15,8 +15,10 @@ const Quickview = ({ isOverlay, setIsOverlay, ...cat }) => {
   };
 
   return (
-    <button onClick={displayQuickView}>
-      <AiOutlineSearch />
+    <>
+      <button onClick={displayQuickView}>
+        <AiOutlineSearch />
+      </button>
       {quickview ? (
         <QuickviewContent
           {...cat}
@@ -26,7 +28,7 @@ const Quickview = ({ isOverlay, setIsOverlay, ...cat }) => {
           setQuickview={setQuickview}
         />
       ) : null}
-    </button>
+    </>
   );
 };
 export default Quickview;
