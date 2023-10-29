@@ -10,7 +10,7 @@ Lists of tasks that are done, and those that need to be done.
    - [x] ~~Add Store Logo~~
    - [x] ~~Create Navigation~~
    - [x] ~~Add Login, Register and Cart icons~~
-2. [ ] Hero Section
+2. [x] ~~Hero Section~~
    - [x] ~~Single Hero Image~~
    - [ ] Create Hero Slider
 3. [x] ~~Create Footer~~
