@@ -16,6 +16,7 @@ Lists of tasks that are done, and those that need to be done.
 3. [x] ~~Create Footer~~
 4. [x] ~~Latest Products~~
    - [x] ~~Card Component~~
+   - [ ] Use Carousel
 5. [x] ~~Shop By Category~~
 6. [ ] Category Pages
    - [x] ~~Create Electronics Page~~
