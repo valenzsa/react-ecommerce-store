@@ -7,7 +7,7 @@ import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Overlay from "../../../components/overlay/Overlay";
 
 const Jewelry = () => {
-  const [jewelries, setJewelries] = useState([]);
+  const [products, setProducts] = useState([]);
   const [isOverlay, setIsOverlay] = useState(false);
 
   const getJewelries = async () => {
@@ -17,7 +17,7 @@ const Jewelry = () => {
       );
       const data = await response.json();
       //console.log(data);
-      setJewelries(data);
+      setProducts(data);
     } catch (error) {
       console.log(error);
     }
@@ -37,7 +37,7 @@ const Jewelry = () => {
           <Sidebar />
           <div className="content-primary">
             <Card
-              category={jewelries}
+              products={products}
               isOverlay={isOverlay}
               setIsOverlay={setIsOverlay}
             />

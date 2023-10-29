@@ -4,15 +4,17 @@ import "../card/Card.css";
 import Quickview from "./quickview/Quickview";
 import Wishlist from "./wishlist/Wishlist";
 
-const Card = ({ category, isOverlay, setIsOverlay }) => {
-  console.log("category");
-  console.log(category);
+const Card = ({ products, isOverlay, setIsOverlay }) => {
+  console.log("Card");
+  console.log(products);
+  // console.log("category");
+  // console.log(category);
 
-  console.log("isOverlay card");
-  console.log(isOverlay);
+  // console.log("isOverlay card");
+  // console.log(isOverlay);
 
-  console.log("setIsOverlay card");
-  console.log(setIsOverlay);
+  // console.log("setIsOverlay card");
+  // console.log(setIsOverlay);
 
   const hasDecimal = (num) => {
     return num % 1 !== 0;
@@ -36,7 +38,7 @@ const Card = ({ category, isOverlay, setIsOverlay }) => {
 
   return (
     <div className="card-container">
-      {category.map((cat) => {
+      {products.map((cat) => {
         return (
           <div className="card" key={cat.id} id={cat.id}>
             <div className="card-thumbnail">
@@ -64,7 +66,6 @@ const Card = ({ category, isOverlay, setIsOverlay }) => {
                 </a>
               </h3>
               <div className="rating">
-                {/* {Math.floor(cat.rating.rate)} */}
                 {cat.rating.rate}
                 <div className="stars">
                   <div className="star">
