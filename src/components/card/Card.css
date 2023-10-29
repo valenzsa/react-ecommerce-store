@@ -86,6 +86,7 @@
   flex-direction: column;
   height: 175px;
   justify-content: space-between;
+  padding: 15px 0 0 0;
 }
 
 .card-container .card .card-content h3 {
