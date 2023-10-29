@@ -14,8 +14,8 @@ Lists of tasks that are done, and those that need to be done.
    - [x] ~~Single Hero Image~~
    - [ ] Create Hero Slider
 3. [x] ~~Create Footer~~
-4. [x] Latest Products
-   - [x] Card Component
+4. [x] ~~Latest Products~~
+   - [x] ~~Card Component~~
 5. [x] ~~Shop By Category~~
 6. [ ] Category Pages
    - [x] ~~Create Electronics Page~~
