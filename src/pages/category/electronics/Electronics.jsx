@@ -9,8 +9,7 @@ import Overlay from "../../../components/overlay/Overlay";
 const Electronics = () => {
   const [products, setProducts] = useState([]);
   const [isOverlay, setIsOverlay] = useState(false);
-  //console.log("isOverlay");
-  //console.log(isOverlay);
+  const [isChecked, setIsChecked] = useState(false);
 
   const getElectronics = async () => {
     try {
@@ -36,12 +35,19 @@ const Electronics = () => {
         <Breadcrumb />
         <h2>Electronics</h2>
         <div className="content-wrapper">
-          <Sidebar />
+          <Sidebar
+            products={products}
+            setProducts={setProducts}
+            isChecked={isChecked}
+            setIsChecked={setIsChecked}
+          />
           <div className="content-primary">
             <Card
               products={products}
               isOverlay={isOverlay}
               setIsOverlay={setIsOverlay}
+              isChecked={isChecked}
+              setIsChecked={setIsChecked}
             />
           </div>
         </div>

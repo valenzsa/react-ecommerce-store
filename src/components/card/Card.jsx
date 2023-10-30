@@ -4,7 +4,13 @@ import "../card/Card.css";
 import Quickview from "./quickview/Quickview";
 import Wishlist from "./wishlist/Wishlist";
 
-const Card = ({ products, isOverlay, setIsOverlay }) => {
+const Card = ({
+  products,
+  isOverlay,
+  setIsOverlay,
+  isChecked,
+  setIsChecked,
+}) => {
   console.log("Card");
   console.log(products);
   // console.log("category");

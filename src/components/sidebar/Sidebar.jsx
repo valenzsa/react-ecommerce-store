@@ -1,10 +1,21 @@
 import { FaStar } from "react-icons/fa";
 import "../sidebar/Sidebar.css";
+import { useEffect } from "react";
 
-const Sidebar = () => {
+const Sidebar = ({ products, setProducts, isChecked, setIsChecked }) => {
+  const filterByPriceHandler = (price) => {
+    setIsChecked(true);
+    console.log(products);
+    console.log(price);
+    const filterByPrice = products.filter((product) => product.price <= price);
+    setProducts(filterByPrice);
+  };
+
+  console.log(products);
+
   return (
     <div className="sidebar">
-      <div class="filter-block filterByReviews">
+      <div className="filter-block filterByReviews">
         <h5>Reviews</h5>
         <ul>
           <li>
@@ -38,19 +49,24 @@ const Sidebar = () => {
         <h5>Filter By Price</h5>
         <ul>
           <li>
-            <input type="checkbox" /> $0 - $49.00
+            <input type="checkbox" onChange={() => filterByPriceHandler(49)} />{" "}
+            $0 - $49.00
           </li>
           <li>
-            <input type="checkbox" /> $50.00 - $99.00
+            <input type="checkbox" onChange={() => filterByPriceHandler(99)} />{" "}
+            $50.00 - $99.00
           </li>
           <li>
-            <input type="checkbox" /> $100.00 - $149.00
+            <input type="checkbox" onChange={() => filterByPriceHandler(149)} />{" "}
+            $100.00 - $149.00
           </li>
           <li>
-            <input type="checkbox" /> $150.00 - $199.00
+            <input type="checkbox" onChange={() => filterByPriceHandler(199)} />{" "}
+            $150.00 - $199.00
           </li>
           <li>
-            <input type="checkbox" /> $200+
+            <input type="checkbox" onChange={() => filterByPriceHandler()} />{" "}
+            $200+
           </li>
         </ul>
       </div>
