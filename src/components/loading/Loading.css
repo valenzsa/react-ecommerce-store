@@ -1,0 +1,14 @@
+.loading-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container .loading {}
+
+.loading-container .loading p {
+  font-size: 30px;
+  font-weight: bold;
+}
