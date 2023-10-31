@@ -36,6 +36,7 @@ const Electronics = () => {
         <h2>Electronics</h2>
         <div className="content-wrapper">
           <Sidebar
+            categoryName={"electronics"}
             products={products}
             setProducts={setProducts}
             isChecked={isChecked}

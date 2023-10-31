@@ -1,17 +1,39 @@
 import { FaStar } from "react-icons/fa";
 import "../sidebar/Sidebar.css";
-import { useEffect } from "react";
 
-const Sidebar = ({ products, setProducts, isChecked, setIsChecked }) => {
-  const filterByPriceHandler = (price) => {
-    setIsChecked(true);
-    console.log(products);
-    console.log(price);
-    const filterByPrice = products.filter((product) => product.price <= price);
-    setProducts(filterByPrice);
+const Sidebar = ({
+  categoryName,
+  products,
+  setProducts,
+  isChecked,
+  setIsChecked,
+}) => {
+  const getProducts = async () => {
+    try {
+      const response = await fetch(
+        `https://fakestoreapi.com/products/category/${categoryName}`
+      );
+      const data = await response.json();
+      console.log(data);
+      setProducts(data);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
-  console.log(products);
+  const filterByPriceHandler = (e) => {
+    if (e.target.checked) {
+      setIsChecked(true);
+      console.log(e.target.attributes[1].value);
+      const filterByPrice = products.filter(
+        (product) => product.price <= e.target.attributes[1].value
+      );
+      setProducts(filterByPrice);
+    } else {
+      setIsChecked(false);
+      getProducts();
+    }
+  };
 
   return (
     <div className="sidebar">
@@ -49,23 +71,43 @@ const Sidebar = ({ products, setProducts, isChecked, setIsChecked }) => {
         <h5>Filter By Price</h5>
         <ul>
           <li>
-            <input type="checkbox" onChange={() => filterByPriceHandler(49)} />{" "}
+            <input
+              type="checkbox"
+              onChange={filterByPriceHandler}
+              data-price="49"
+            />{" "}
             $0 - $49.00
           </li>
           <li>
-            <input type="checkbox" onChange={() => filterByPriceHandler(99)} />{" "}
+            <input
+              type="checkbox"
+              onChange={filterByPriceHandler}
+              data-price="99"
+            />
             $50.00 - $99.00
           </li>
           <li>
-            <input type="checkbox" onChange={() => filterByPriceHandler(149)} />{" "}
+            <input
+              type="checkbox"
+              onChange={filterByPriceHandler}
+              data-price="149"
+            />
             $100.00 - $149.00
           </li>
           <li>
-            <input type="checkbox" onChange={() => filterByPriceHandler(199)} />{" "}
+            <input
+              type="checkbox"
+              onChange={filterByPriceHandler}
+              data-price="199"
+            />
             $150.00 - $199.00
           </li>
           <li>
-            <input type="checkbox" onChange={() => filterByPriceHandler()} />{" "}
+            <input
+              type="checkbox"
+              onChange={filterByPriceHandler}
+              data-price="200"
+            />
             $200+
           </li>
         </ul>

@@ -9,6 +9,7 @@ import Overlay from "../../../components/overlay/Overlay";
 const Men = () => {
   const [products, setProducts] = useState([]);
   const [isOverlay, setIsOverlay] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
   const getMens = async () => {
     try {
@@ -33,7 +34,13 @@ const Men = () => {
         <Breadcrumb />
         <h2>Men's Clothing</h2>
         <div className="content-wrapper">
-          <Sidebar />
+          <Sidebar
+            categoryName={"men's clothing"}
+            products={products}
+            setProducts={setProducts}
+            isChecked={isChecked}
+            setIsChecked={setIsChecked}
+          />
           <div className="content-primary">
             <Card
               products={products}
