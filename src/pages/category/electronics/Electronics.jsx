@@ -6,6 +6,7 @@ import Sidebar from "../../../components/sidebar/Sidebar";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Overlay from "../../../components/overlay/Overlay";
 import Loading from "../../../components/loading/Loading";
+import DisplayProducts from "../../../components/display-products/DisplayProducts";
 
 const Electronics = () => {
   const [products, setProducts] = useState([]);
@@ -57,18 +58,14 @@ const Electronics = () => {
             setIsChecked={setIsChecked}
           />
           <div className="content-primary">
-            {isLoading ? (
-              // Display loading component while fetching data
-              <Loading />
-            ) : (
-              <Card
-                products={products}
-                isOverlay={isOverlay}
-                setIsOverlay={setIsOverlay}
-                isChecked={isChecked}
-                setIsChecked={setIsChecked}
-              />
-            )}
+            <DisplayProducts
+              isLoading={isLoading}
+              products={products}
+              isOverlay={isOverlay}
+              setIsOverlay={setIsOverlay}
+              isChecked={isChecked}
+              setIsChecked={setIsChecked}
+            />
           </div>
         </div>
       </div>
