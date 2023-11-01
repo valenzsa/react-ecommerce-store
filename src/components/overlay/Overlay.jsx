@@ -1,7 +1,6 @@
 import "../overlay/Overlay.css";
 
 const Overlay = () => {
-  console.log("overlay");
-  return <div class="overlay"></div>;
+  return <div className="overlay"></div>;
 };
 export default Overlay;
