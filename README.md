@@ -35,6 +35,7 @@ Lists of tasks that are done, and those that need to be done.
      - [x] ~~Add Wishlist button~~
      - [x] ~~Add Quick View~~
      - [ ] Add Product Ribbon (On Sale, New, Out of Stock etc.)
+   - [x] ~~Loading Component~~
 7. [ ] About Us Page
 8. [ ] Product Details Page
 9. [ ] Cart Page
