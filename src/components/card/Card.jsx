@@ -10,6 +10,7 @@ const Card = ({
   setIsOverlay,
   isChecked,
   setIsChecked,
+  filteredCategorySelection,
 }) => {
   console.log("Card");
   console.log(products);
@@ -44,49 +45,113 @@ const Card = ({
 
   return (
     <div className="card-container">
-      {products.map((cat) => {
-        return (
-          <div className="card" key={cat.id} id={cat.id}>
-            <div className="card-thumbnail">
-              <div className="product-buttons">
-                <ul>
-                  <li>
-                    <Wishlist {...cat} />
-                  </li>
-                  <li>
-                    <Quickview
-                      {...cat}
-                      isOverlay={isOverlay}
-                      setIsOverlay={setIsOverlay}
-                    />
-                  </li>
-                </ul>
-              </div>
-
-              <img src={cat.image} alt={cat.title} />
-            </div>
-            <div className="card-content">
-              <h3>
-                <a href="#" title={cat.title}>
-                  {cat.title.substring(0, 40)}...
-                </a>
-              </h3>
-              <div className="rating">
-                {cat.rating.rate}
-                <div className="stars">
-                  <div className="star">
-                    <FaStar />
+      {isChecked
+        ? filteredCategorySelection.map((cat) => {
+            return (
+              <div
+                className="card"
+                key={cat.id}
+                id={cat.id}
+              >
+                <div className="card-thumbnail">
+                  <div className="product-buttons">
+                    <ul>
+                      <li>
+                        <Wishlist {...cat} />
+                      </li>
+                      <li>
+                        <Quickview
+                          {...cat}
+                          isOverlay={isOverlay}
+                          setIsOverlay={setIsOverlay}
+                        />
+                      </li>
+                    </ul>
                   </div>
+
+                  <img
+                    src={cat.image}
+                    alt={cat.title}
+                  />
+                </div>
+                <div className="card-content">
+                  <h3>
+                    <a
+                      href="#"
+                      title={cat.title}
+                    >
+                      {cat.title.substring(0, 40)}...
+                    </a>
+                  </h3>
+                  <div className="rating">
+                    {cat.rating.rate}
+                    <div className="stars">
+                      <div className="star">
+                        <FaStar />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card-price">
+                    ${hasDecimal(cat.price) ? cat.price : cat.price + ".00"}
+                  </div>
+                  <button className="card-add-to-cart">Add To Cart</button>
                 </div>
               </div>
-              <div className="card-price">
-                ${hasDecimal(cat.price) ? cat.price : cat.price + ".00"}
+            );
+          })
+        : products.map((cat) => {
+            return (
+              <div
+                className="card"
+                key={cat.id}
+                id={cat.id}
+              >
+                <div className="card-thumbnail">
+                  <div className="product-buttons">
+                    <ul>
+                      <li>
+                        <Wishlist {...cat} />
+                      </li>
+                      <li>
+                        <Quickview
+                          {...cat}
+                          isOverlay={isOverlay}
+                          setIsOverlay={setIsOverlay}
+                        />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <img
+                    src={cat.image}
+                    alt={cat.title}
+                  />
+                </div>
+                <div className="card-content">
+                  <h3>
+                    <a
+                      href="#"
+                      title={cat.title}
+                    >
+                      {cat.title.substring(0, 40)}...
+                    </a>
+                  </h3>
+                  <div className="rating">
+                    {cat.rating.rate}
+                    <div className="stars">
+                      <div className="star">
+                        <FaStar />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card-price">
+                    ${hasDecimal(cat.price) ? cat.price : cat.price + ".00"}
+                  </div>
+                  <button className="card-add-to-cart">Add To Cart</button>
+                </div>
               </div>
-              <button className="card-add-to-cart">Add To Cart</button>
-            </div>
-          </div>
-        );
-      })}
+            );
+          })}
     </div>
   );
 };

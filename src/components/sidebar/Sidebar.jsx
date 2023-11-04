@@ -7,19 +7,21 @@ const Sidebar = ({
   setProducts,
   isChecked,
   setIsChecked,
+  filteredCategorySelection,
+  setFilteredCategorySelection,
 }) => {
-  const getProducts = async () => {
-    try {
-      const response = await fetch(
-        `https://fakestoreapi.com/products/category/${categoryName}`
-      );
-      const data = await response.json();
-      console.log(data);
-      setProducts(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const getProducts = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       `https://fakestoreapi.com/products/category/${categoryName}`
+  //     );
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setProducts(data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   const filterByPriceHandler = (e) => {
     if (e.target.checked) {
@@ -28,10 +30,10 @@ const Sidebar = ({
       const filterByPrice = products.filter(
         (product) => product.price <= e.target.attributes[1].value
       );
-      setProducts(filterByPrice);
+      setFilteredCategorySelection(filterByPrice);
     } else {
       setIsChecked(false);
-      getProducts();
+      //setProducts();
     }
   };
 
