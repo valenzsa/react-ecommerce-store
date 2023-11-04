@@ -7,6 +7,7 @@ const DisplayProducts = ({
   setIsOverlay,
   isChecked,
   setIsChecked,
+  filteredCategorySelection,
 }) => {
   return (
     <>
@@ -20,6 +21,7 @@ const DisplayProducts = ({
           setIsOverlay={setIsOverlay}
           isChecked={isChecked}
           setIsChecked={setIsChecked}
+          filteredCategorySelection={filteredCategorySelection}
         />
       )}
     </>
