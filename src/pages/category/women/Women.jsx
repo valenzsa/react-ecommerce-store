@@ -12,6 +12,9 @@ const Women = () => {
   const [isOverlay, setIsOverlay] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [filteredCategorySelection, setFilteredCategorySelection] = useState(
+    []
+  );
 
   const getWomens = async () => {
     setIsLoading(true);
@@ -55,6 +58,8 @@ const Women = () => {
             setProducts={setProducts}
             isChecked={isChecked}
             setIsChecked={setIsChecked}
+            filteredCategorySelection={filteredCategorySelection}
+            setFilteredCategorySelection={setFilteredCategorySelection}
           />
           <div className="content-primary">
             <DisplayProducts
@@ -64,6 +69,7 @@ const Women = () => {
               setIsOverlay={setIsOverlay}
               isChecked={isChecked}
               setIsChecked={setIsChecked}
+              filteredCategorySelection={filteredCategorySelection}
             />
           </div>
         </div>
