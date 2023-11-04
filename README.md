@@ -42,7 +42,9 @@ Lists of tasks that are done, and those that need to be done.
 10. [ ] Wishlist Page
 11. [ ] Login Page
 12. [ ] Register Page
-13. [ ] Admin Page
+13. [ ] Page Not Found (404 Page)
+14. [ ] Search Results Page
+15. [ ] Admin Page
 
 ## Resources
 
