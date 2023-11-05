@@ -26,7 +26,7 @@ Lists of tasks that are done, and those that need to be done.
    - [x] ~~Breadcrumb~~
    - [ ] Filter system
      - [ ] Filter By Reviews
-     - [ ] Filter By Price
+     - [x] ~~Filter By Price~~
      - [ ] Filter By Product Status
    - [ ] Sort By
      - [ ] Alphabetical
