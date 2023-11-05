@@ -1,6 +1,7 @@
 .header-container {
   background-color: #fff;
   border-bottom: 1px solid #000;
+  height: 100px;
 }
 .header-container .header {
   display: flex;
