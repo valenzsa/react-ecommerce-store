@@ -1,8 +1,11 @@
 .hero-container {
+  min-height: 584px;
+  background-color: #f5f5f7;
 }
 
 .hero-container .hero {
   position: relative;
+  min-height: 584px;
 }
 
 .hero-container .hero .hero-content {
