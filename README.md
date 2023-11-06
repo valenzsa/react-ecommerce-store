@@ -28,6 +28,7 @@ Lists of tasks that are done, and those that need to be done.
      - [ ] Filter By Reviews
      - [x] ~~Filter By Price~~
      - [ ] Filter By Product Status
+     - [x] ~~Add "No results found" if results from filter is empty~~
    - [ ] Sort By
      - [ ] Alphabetical
      - [ ] Price
