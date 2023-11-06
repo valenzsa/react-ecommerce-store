@@ -77,8 +77,8 @@ const Sidebar = ({
               type="checkbox"
               onChange={filterByPriceHandler}
               data-price="49"
-            />{" "}
-            $0 - $49.00
+            />
+            &nbsp;$0 - $49.00
           </li>
           <li>
             <input
@@ -86,7 +86,7 @@ const Sidebar = ({
               onChange={filterByPriceHandler}
               data-price="99"
             />
-            $50.00 - $99.00
+            &nbsp;$50.00 - $99.00
           </li>
           <li>
             <input
@@ -94,7 +94,7 @@ const Sidebar = ({
               onChange={filterByPriceHandler}
               data-price="149"
             />
-            $100.00 - $149.00
+            &nbsp;$100.00 - $149.00
           </li>
           <li>
             <input
@@ -102,7 +102,7 @@ const Sidebar = ({
               onChange={filterByPriceHandler}
               data-price="199"
             />
-            $150.00 - $199.00
+            &nbsp;$150.00 - $199.00
           </li>
           <li>
             <input
@@ -110,7 +110,7 @@ const Sidebar = ({
               onChange={filterByPriceHandler}
               data-price="200"
             />
-            $200+
+            &nbsp;$200+
           </li>
         </ul>
       </div>
