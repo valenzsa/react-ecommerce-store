@@ -7,8 +7,21 @@ const ProductDetail = () => {
   return (
     <>
       <Header />
-      <Breadcrumb />
-      <p>Product Details...</p>
+      <div className="container">
+        <Breadcrumb />
+        <div className="product-details">
+          <div className="gallery">
+            <img src="https://placehold.co/500x500" alt="" />
+          </div>
+          <div className="overview">
+            <div className="product-title"></div>
+            <div className="product-description"></div>
+            <div className="product-price"></div>
+            <div className="add-to-cart"></div>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </>
   );
