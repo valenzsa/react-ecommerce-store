@@ -5,6 +5,8 @@ import { AiOutlineRight } from "react-icons/ai";
 
 const Breadcrumb = () => {
   const location = useLocation();
+  console.log(location.pathname);
+  let categoryName = location.pathname.split("/");
 
   return (
     <div className="breadcrumb">
@@ -16,7 +18,9 @@ const Breadcrumb = () => {
           <AiOutlineRight />
         </li>
         <li>
-          <Link to={location.pathname}>{location.pathname.split("/")}</Link>
+          <Link to={location.pathname}>
+            {categoryName[1].replace(/%20/g, " ")}
+          </Link>
         </li>
       </ul>
     </div>

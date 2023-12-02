@@ -1,6 +1,11 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import { About, Electronics, Home, Jewelry, Men, Women } from "./pages";
 import Layout from "./pages/Layout";
+import ProductDetail from "./pages/product-detail/ProductDetail";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "women",
         element: <Women />,
+      },
+      {
+        path: "/:title",
+        element: <ProductDetail />,
       },
       {
         path: "about",
