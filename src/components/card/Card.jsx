@@ -3,6 +3,8 @@ import { FaStar, FaHeart, FaRegHeart } from "react-icons/fa";
 import "../card/Card.css";
 import Quickview from "./quickview/Quickview";
 import Wishlist from "./wishlist/Wishlist";
+import { Link } from "react-router-dom";
+import ProductDetail from "../../pages/product-detail/ProductDetail";
 
 const Card = ({
   products,
@@ -22,6 +24,8 @@ const Card = ({
 
   // console.log("setIsOverlay card");
   // console.log(setIsOverlay);
+
+  console.log(filteredCategorySelection);
 
   const hasDecimal = (num) => {
     return num % 1 !== 0;
@@ -71,9 +75,9 @@ const Card = ({
                   </div>
                   <div className="card-content">
                     <h3>
-                      <a href="#" title={cat.title}>
+                      <Link to={`/${cat.title}`}>
                         {cat.title.substring(0, 40)}...
-                      </a>
+                      </Link>
                     </h3>
                     <div className="rating">
                       {cat.rating.rate}
@@ -114,9 +118,9 @@ const Card = ({
                 </div>
                 <div className="card-content">
                   <h3>
-                    <a href="#" title={cat.title}>
+                    <Link to={`/${cat.title}`}>
                       {cat.title.substring(0, 40)}...
-                    </a>
+                    </Link>
                   </h3>
                   <div className="rating">
                     {cat.rating.rate}
