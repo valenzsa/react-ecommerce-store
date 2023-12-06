@@ -75,7 +75,7 @@ const Card = ({
                   </div>
                   <div className="card-content">
                     <h3>
-                      <Link to={`/${cat.title}`}>
+                      <Link to={`/${cat.category}/${cat.id}`}>
                         {cat.title.substring(0, 40)}...
                       </Link>
                     </h3>
@@ -118,7 +118,7 @@ const Card = ({
                 </div>
                 <div className="card-content">
                   <h3>
-                    <Link to={`/${cat.title}`}>
+                    <Link to={`/${cat.category}/${cat.id}`}>
                       {cat.title.substring(0, 40)}...
                     </Link>
                   </h3>

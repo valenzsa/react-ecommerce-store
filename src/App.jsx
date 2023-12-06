@@ -3,9 +3,16 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import { About, Electronics, Home, Jewelry, Men, Women } from "./pages";
+import {
+  About,
+  Electronics,
+  Home,
+  Jewelry,
+  Men,
+  Women,
+  ProductDetail,
+} from "./pages";
 import Layout from "./pages/Layout";
-import ProductDetail from "./pages/product-detail/ProductDetail";
 
 const router = createBrowserRouter([
   {
@@ -17,23 +24,11 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "electronics",
+        path: ":category/",
         element: <Electronics />,
       },
       {
-        path: "jewelry",
-        element: <Jewelry />,
-      },
-      {
-        path: "men",
-        element: <Men />,
-      },
-      {
-        path: "women",
-        element: <Women />,
-      },
-      {
-        path: "/:title",
+        path: ":category/:id",
         element: <ProductDetail />,
       },
       {
