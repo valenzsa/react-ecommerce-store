@@ -27,7 +27,7 @@ Lists of tasks that are done are crossed out, and those that need to be done.
    - [ ] Sort By
      - [ ] Alphabetical
      - [ ] Price
-   - [x] Card Component
+   - [x] ~~Card Component~~
      - [x] ~~Add Wishlist button~~
      - [x] ~~Add Quick View~~
      - [ ] Add Product Ribbon (On Sale, New, Out of Stock etc.)
