@@ -3,44 +3,51 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import {
-  About,
-  Electronics,
-  Home,
-  Jewelry,
-  Men,
-  Women,
-  ProductDetail,
-} from "./pages";
+import { About, Home, Category, ProductDetail } from "./pages";
 import Layout from "./pages/Layout";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: ":category/",
-        element: <Electronics />,
-      },
-      {
-        path: ":category/:id",
-        element: <ProductDetail />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-    ],
-  },
-]);
+import { useState } from "react";
 
 function App() {
-  return <RouterProvider router={router} />;
+  const [categoryName, setCategoryName] = useState("");
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: (
+            <Home
+              categoryName={categoryName}
+              setCategoryName={setCategoryName}
+            />
+          ),
+        },
+        {
+          path: ":category/",
+          element: (
+            <Category
+              categoryName={categoryName}
+              setCategoryName={setCategoryName}
+            />
+          ),
+        },
+        {
+          path: ":category/:id",
+          element: <ProductDetail />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+      ],
+    },
+  ]);
+
+  return (
+    <RouterProvider router={router} fallbackElement={<h2>Loading...</h2>} />
+  );
 }
 
 export default App;
