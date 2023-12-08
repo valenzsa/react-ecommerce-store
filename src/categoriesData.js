@@ -7,8 +7,8 @@ const categories = [
   },
   {
     id: 2,
-    name: "jewelry",
-    linkName: "jewelry",
+    name: "jewelery",
+    linkName: "jewelery",
     image: "/src/assets/jewelry.png",
   },
   {

@@ -14,8 +14,8 @@ const Card = ({
   setIsChecked,
   filteredCategorySelection,
 }) => {
-  console.log("Card");
-  console.log(products);
+  /* console.log("Card");
+  console.log(products); */
   // console.log("category");
   // console.log(category);
 
@@ -25,7 +25,7 @@ const Card = ({
   // console.log("setIsOverlay card");
   // console.log(setIsOverlay);
 
-  console.log(filteredCategorySelection);
+  // console.log(filteredCategorySelection);
 
   const hasDecimal = (num) => {
     return num % 1 !== 0;

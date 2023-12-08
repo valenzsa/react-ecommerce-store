@@ -6,7 +6,8 @@ import LatestProducts from "../../components/latest-products/LatestProducts";
 import ShopByCategory from "../../components/shop-by-category/ShopByCategory";
 import "./Home.css";
 import Overlay from "../../components/overlay/Overlay";
-const Home = () => {
+
+const Home = ({ categoryName, setCategoryName }) => {
   const [isOverlay, setIsOverlay] = useState(false);
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -44,7 +45,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header setCategoryName={setCategoryName} />
       <Hero />
       <ShopByCategory />
       <LatestProducts

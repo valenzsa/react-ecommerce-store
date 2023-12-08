@@ -14,7 +14,7 @@ import { GiLargeDress } from "react-icons/gi";
 import categories from "../../categoriesData";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ setCategoryName }) => {
   return (
     <div className="header-container">
       <div className="header">
@@ -75,16 +75,22 @@ const Header = () => {
                   case "electronics":
                     return (
                       <li key={category.id}>
-                        <Link to={`/${category.linkName}`}>
+                        <Link
+                          to={`/${category.linkName}`}
+                          onClick={() => setCategoryName(`${category.name}`)}
+                        >
                           <FaHeadphones /> {category.name}
                         </Link>
                       </li>
                     );
                     break;
-                  case "jewelry":
+                  case "jewelery":
                     return (
                       <li key={category.id}>
-                        <Link to={`/${category.linkName}`}>
+                        <Link
+                          to={`/${category.linkName}`}
+                          onClick={() => setCategoryName(`${category.name}`)}
+                        >
                           <BsWatch /> {category.name}
                         </Link>
                       </li>
@@ -93,7 +99,10 @@ const Header = () => {
                   case "men's clothing":
                     return (
                       <li key={category.id}>
-                        <Link to={`/${category.linkName}`}>
+                        <Link
+                          to={`/${category.linkName}`}
+                          onClick={() => setCategoryName(`${category.name}`)}
+                        >
                           <FaTshirt /> {category.name}
                         </Link>
                       </li>
@@ -102,7 +111,10 @@ const Header = () => {
                   case "women's clothing":
                     return (
                       <li key={category.id}>
-                        <Link to={`/${category.linkName}`}>
+                        <Link
+                          to={`/${category.linkName}`}
+                          onClick={() => setCategoryName(`${category.name}`)}
+                        >
                           <GiLargeDress /> {category.name}
                         </Link>
                       </li>
