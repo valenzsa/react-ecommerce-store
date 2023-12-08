@@ -19,11 +19,6 @@ Lists of tasks that are done, and those that need to be done.
    - [ ] Use Carousel
 5. [x] ~~Shop By Category~~
 6. [ ] Category Pages
-   - [x] ~~Create Electronics Page~~
-   - [x] ~~Create Jewelry Page~~
-   - [x] ~~Create Men's Clothing Page~~
-   - [x] ~~Create Women's Clothing Page~~
-   - [x] ~~Breadcrumb~~
    - [ ] Filter system
      - [ ] Filter By Reviews
      - [x] ~~Filter By Price~~
@@ -37,15 +32,16 @@ Lists of tasks that are done, and those that need to be done.
      - [x] ~~Add Quick View~~
      - [ ] Add Product Ribbon (On Sale, New, Out of Stock etc.)
    - [x] ~~Loading Component~~
-7. [ ] About Us Page
-8. [ ] Product Details Page
-9. [ ] Cart Page
-10. [ ] Wishlist Page
-11. [ ] Login Page
-12. [ ] Register Page
-13. [ ] Page Not Found (404 Page)
-14. [ ] Search Results Page
-15. [ ] Admin Page
+7. [ ] Product Details Page
+8. [x] ~~Breadcrumb Component~~
+9. [ ] About Us Page
+10. [ ] Cart Page
+11. [ ] Wishlist Page
+12. [ ] Login Page
+13. [ ] Register Page
+14. [ ] Page Not Found (404 Page)
+15. [ ] Search Results Page
+16. [ ] Admin Page
 
 ## Resources
 
