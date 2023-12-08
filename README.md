@@ -4,7 +4,7 @@ This is a work in progress. The todo items will grow as it continuous or as need
 
 > Task List
 
-Lists of tasks that are done, and those that need to be done.
+Lists of tasks that are done are crossed out, and those that need to be done.
 
 1. [x] ~~Create Header~~
    - [x] ~~Add Store Logo~~
@@ -27,7 +27,7 @@ Lists of tasks that are done, and those that need to be done.
    - [ ] Sort By
      - [ ] Alphabetical
      - [ ] Price
-   - [ ] Card Component
+   - [x] Card Component
      - [x] ~~Add Wishlist button~~
      - [x] ~~Add Quick View~~
      - [ ] Add Product Ribbon (On Sale, New, Out of Stock etc.)
