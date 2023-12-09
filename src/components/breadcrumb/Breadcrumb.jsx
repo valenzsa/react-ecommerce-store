@@ -9,8 +9,8 @@ const Breadcrumb = () => {
   // let categoryName = location.pathname.split("/");
 
   const params = useParams();
-  console.log("params...");
-  console.log(params);
+  // console.log("params...");
+  // console.log(params);
 
   return (
     <div className="breadcrumb">
