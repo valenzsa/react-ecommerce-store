@@ -7,8 +7,8 @@ const ProductDetail = () => {
   return (
     <>
       <Header />
+      <Breadcrumb />
       <div className="container">
-        <Breadcrumb />
         <div className="product-details">
           <div className="gallery">
             <div className="slider">
