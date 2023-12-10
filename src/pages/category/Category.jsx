@@ -87,8 +87,8 @@ const Category = ({ categoryName, setCategoryName }) => {
   return (
     <>
       <Header setCategoryName={setCategoryName} />
+      <Breadcrumb />
       <div className="container">
-        <Breadcrumb />
         <h2>{`${categoryName}`}</h2>
         <div className="content-wrapper">
           <Sidebar
