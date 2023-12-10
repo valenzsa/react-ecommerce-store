@@ -13,21 +13,23 @@ const Breadcrumb = () => {
   // console.log(params);
 
   return (
-    <div className="breadcrumb">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <AiOutlineRight />
-        </li>
-        <li>
-          <Link to={params.category}>
-            {/* {categoryName[1].replace(/%20/g, " ")} */}
-            {params.category}
-          </Link>
-        </li>
-      </ul>
+    <div className="breadcrumb-container">
+      <div className="breadcrumb">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <AiOutlineRight />
+          </li>
+          <li>
+            <Link to={params.category}>
+              {/* {categoryName[1].replace(/%20/g, " ")} */}
+              {params.category}
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
