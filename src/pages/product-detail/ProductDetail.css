@@ -44,14 +44,30 @@
 }
 
 .product-details .overview .product-title h3 {
-  font-size: 35px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-details .overview .product-description {
+  margin-bottom: 15px;
+}
+
+.product-details .overview .product-description p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #878787;
 }
 
 .product-details .overview .product-price {
+  margin-bottom: 15px;
 }
 
 .product-details .overview .product-price p {
   font-size: 25px;
   font-weight: bold;
   color: #ec0101;
+}
+
+.product-details .add-to-cart {
+  margin-bottom: 15px;
 }

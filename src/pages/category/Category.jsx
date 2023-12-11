@@ -9,8 +9,7 @@ import categoriesObj from "../../categoriesData";
 import "../category/Category.css";
 import { useState, useEffect } from "react";
 
-const Category = ({ categoryName, setCategoryName }) => {
-  const [products, setProducts] = useState([]);
+const Category = ({ categoryName, setCategoryName, products, setProducts }) => {
   const [isOverlay, setIsOverlay] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
