@@ -18,7 +18,7 @@ Lists of tasks that are done are crossed out, and those that need to be done.
    - [x] ~~Card Component~~
    - [ ] Use Carousel
 5. [x] ~~Shop By Category~~
-6. [ ] Category Pages
+6. [x] ~~Category Page~~
    - [ ] Filter system
      - [ ] Filter By Reviews
      - [x] ~~Filter By Price~~
@@ -32,7 +32,7 @@ Lists of tasks that are done are crossed out, and those that need to be done.
      - [x] ~~Add Quick View~~
      - [ ] Add Product Ribbon (On Sale, New, Out of Stock etc.)
    - [x] ~~Loading Component~~
-7. [ ] Product Details Page
+7. [x] ~~Product Details Page~~
 8. [x] ~~Breadcrumb Component~~
 9. [ ] About Us Page
 10. [ ] Cart Page
