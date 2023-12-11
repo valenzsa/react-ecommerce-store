@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #edf2f8;
+  background-color: #f6f6f8;
 }
 .footer-container .footer {
   width: 1200px;
@@ -11,9 +11,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  display: grid;
+  grid-template-columns: 28% 19% 19% 28%;
+  gap: 2%;
 }
 
 .footer-container .footer .footer-top .subscribe {
+  position: relative;
 }
 
 .footer-container .footer .footer-top .subscribe h3 {
@@ -21,28 +25,36 @@
 }
 
 .footer-container .footer .footer-top .subscribe p {
+  font-size: 14px;
+  color: #878787;
+  margin-bottom: 15px;
 }
 
 .footer-container .footer .footer-top .subscribe input {
   padding: 15px;
   border-radius: 15px;
-  border: 0 none;
-  box-shadow: 0 0 12px rgba(0, 0, 0, var(--global-box-shadow, 0.14)) !important;
+  /* border: 0 none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, var(--global-box-shadow, 0.14)) !important; */
   margin-bottom: 20px;
+  width: 90%;
+  border: 1px solid #000;
 }
-.footer-container .footer .footer-top .subscribe input:active,
+/* .footer-container .footer .footer-top .subscribe input:active,
 .footer-container .footer .footer-top .subscribe input:focus-visible {
   border: 0 none;
-}
+} */
 
 .footer-container .footer .footer-top .subscribe button {
   margin-left: -40px;
-  padding: 15px;
+  padding: 13px;
   border-radius: 15px;
   border: 0 none;
   background-color: #000;
   color: #fff;
   text-transform: uppercase;
+  position: absolute;
+  right: 37px;
+  margin-top: 3px;
 }
 
 .footer-container .footer .footer-top .information {
@@ -63,8 +75,9 @@
 }
 
 .footer-container .footer .footer-top .information ul li a {
-  color: #000;
+  color: #878787;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .footer-container .footer .footer-top .information ul li a:hover {
@@ -89,8 +102,9 @@
 }
 
 .footer-container .footer .footer-top .shopping ul li a {
-  color: #000;
+  color: #878787;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .footer-container .footer .footer-top .shopping ul li a:hover {
@@ -112,6 +126,9 @@
 
 .footer-container .footer .footer-top .contacts ul li {
   margin-bottom: 10px;
+  color: #878787;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .footer-container .footer .footer-top .contacts ul li a {

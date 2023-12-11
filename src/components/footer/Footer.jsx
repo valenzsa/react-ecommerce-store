@@ -19,7 +19,11 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-top">
           <div className="footer-block subscribe">
-            <h3>Subscribe to our newsletter</h3>
+            <h3>Newsletter Signup</h3>
+            <p>
+              Subscribe to our newsletter and <br />
+              get 10% off your first purchase
+            </p>
             <input type="email" value="Enter Your Email Here" />
             <button type="submit" value="Subscribe">
               Subscribe
