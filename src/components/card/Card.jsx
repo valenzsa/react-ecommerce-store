@@ -133,7 +133,7 @@ const Card = ({
                   <div className="card-price">
                     ${hasDecimal(cat.price) ? cat.price : cat.price + ".00"}
                   </div>
-                  <button className="card-add-to-cart">Add To Cart</button>
+                  <button className="add-to-cart">Add To Cart</button>
                 </div>
               </div>
             );
