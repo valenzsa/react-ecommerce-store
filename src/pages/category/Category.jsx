@@ -5,11 +5,11 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Overlay from "../../components/overlay/Overlay";
 import Sidebar from "../../components/sidebar/Sidebar";
+import categoriesObj from "../../categoriesData";
 import "../category/Category.css";
 import { useState, useEffect } from "react";
 
-const Category = ({ categoryName, setCategoryName }) => {
-  const [products, setProducts] = useState([]);
+const Category = ({ categoryName, setCategoryName, products, setProducts }) => {
   const [isOverlay, setIsOverlay] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -17,6 +17,32 @@ const Category = ({ categoryName, setCategoryName }) => {
   const [filteredCategorySelection, setFilteredCategorySelection] = useState(
     []
   );
+
+  const urlParams = useParams();
+  console.log("urlParams.category");
+  console.log(urlParams.category);
+
+  console.log(categoriesObj[2].name);
+
+  // TODO: REVISIT TO REFACTOR
+  // Matching urlParams to categories category data
+  // Cannot use Fake Store API's category name in the url since men's and women's clothing has an apostrophes
+  switch (urlParams.category) {
+    case "electronics":
+      setCategoryName(categoriesObj[0].name);
+      break;
+
+    case "jewelery":
+      setCategoryName(categoriesObj[1].name);
+      break;
+
+    case "men":
+      setCategoryName(categoriesObj[2].name);
+      break;
+    case "women":
+      setCategoryName(categoriesObj[3].name);
+      break;
+  }
 
   //TODO:
   // BE ABLE TO UPDATE PARAMETER
@@ -37,8 +63,8 @@ const Category = ({ categoryName, setCategoryName }) => {
       }
 
       const data = await response.json();
-      console.log("data");
-      console.log(data);
+      // console.log("data");
+      // console.log(data);
       setProducts(data);
     } catch (error) {
       console.log(error);
@@ -60,8 +86,8 @@ const Category = ({ categoryName, setCategoryName }) => {
   return (
     <>
       <Header setCategoryName={setCategoryName} />
+      <Breadcrumb />
       <div className="container">
-        <Breadcrumb />
         <h2>{`${categoryName}`}</h2>
         <div className="content-wrapper">
           <Sidebar

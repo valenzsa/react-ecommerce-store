@@ -9,6 +9,7 @@ import { useState } from "react";
 
 function App() {
   const [categoryName, setCategoryName] = useState("");
+  const [products, setProducts] = useState([]);
 
   const router = createBrowserRouter([
     {
@@ -30,12 +31,16 @@ function App() {
             <Category
               categoryName={categoryName}
               setCategoryName={setCategoryName}
+              products={products}
+              setProducts={setProducts}
             />
           ),
         },
         {
           path: ":category/:id",
-          element: <ProductDetail />,
+          element: (
+            <ProductDetail products={products} setProducts={setProducts} />
+          ),
         },
         {
           path: "about",

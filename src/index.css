@@ -12,7 +12,7 @@
   --color-background-accent-hover: #df8c4f;
   --color-background-accent: #f59a57;
 
-  --font-family-roboto: "Roboto", sans-serif;
+  --font-family-poppins: "Poppins", sans-serif;
 }
 * {
   margin: 0;
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: var(--font-family-roboto);
+  font-family: var(--font-family-poppins);
   /* background: url("./assets/background.jpg"); */
   overflow-x: hidden;
 }
@@ -45,4 +45,20 @@ body {
 }
 
 .container .content-wrapper .content-primary {
+}
+
+.add-to-cart {
+  background-color: var(--color-background-accent);
+  color: var(--color-text-white);
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border: 1px solid var(--color-background-accent);
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.add-to-cart:hover {
+  background-color: var(--color-background-accent-hover);
+  color: var(--color-text-white);
 }

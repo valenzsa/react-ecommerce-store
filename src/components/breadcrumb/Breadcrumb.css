@@ -1,4 +1,10 @@
+.breadcrumb-container {
+  background: #f6f6f6;
+  margin-bottom: 20px;
+}
 .breadcrumb {
+  width: 1200px;
+  margin: 0 auto;
 }
 .breadcrumb ul {
   display: flex;
