@@ -2,6 +2,14 @@
 
 This is a work in progress. The todo items will grow as it continuous or as needed basis.
 
+## Getting Started
+
+1. Clone the project
+2. After cloning, cd into the project directory and run the following command to install dependencies:
+   `npm install or npm i`
+3. Then run the following command to run the dev server.
+   `npm run dev`
+
 > Task List
 
 Lists of tasks that are done are crossed out, and those that need to be done.
