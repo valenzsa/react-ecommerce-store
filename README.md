@@ -13,7 +13,7 @@ This is a work in progress. The todo items will grow as it continuous or as need
 
    `npm run dev`
 
-## <i class="fa fa-list fa-spin fa-2x" style="color: firebrick"></i> Task Lists
+## 📝 Task Lists
 
 Lists of tasks that are done are crossed out, and those that need to be done.
 
