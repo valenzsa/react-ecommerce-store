@@ -13,7 +13,7 @@ This is a work in progress. The todo items will grow as it continuous or as need
 
    `npm run dev`
 
-## Task Lists
+## Task Lists <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/list.svg" width="50" height="50">
 
 Lists of tasks that are done are crossed out, and those that need to be done.
 
