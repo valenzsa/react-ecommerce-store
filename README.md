@@ -16,7 +16,7 @@ Lists of tasks that are done are crossed out, and those that need to be done.
 3. [x] ~~Create Footer~~
 4. [x] ~~Latest Products~~
    - [x] ~~Card Component~~
-   - [ ] Use Carousel
+   - [ ] Use Carousel Slider To Display Products
 5. [x] ~~Shop By Category~~
 6. [x] ~~Category Page~~
    - [ ] Filter system
@@ -41,7 +41,14 @@ Lists of tasks that are done are crossed out, and those that need to be done.
 13. [ ] Register Page
 14. [ ] Page Not Found (404 Page)
 15. [ ] Search Results Page
-16. [ ] Admin Page
+16. [ ] Implement State Management
+
+- [ ] Context API
+- [ ] Redux Toolkit
+- [ ] Zustand
+
+17. [ ] Create Custom Hooks
+18. [ ] Admin Page
 
 ## Resources
 
