@@ -42,12 +42,12 @@ Lists of tasks that are done are crossed out, and those that need to be done.
 14. [ ] Page Not Found (404 Page)
 15. [ ] Search Results Page
 16. [ ] Implement State Management
-
-- [ ] Context API
-- [ ] Redux Toolkit
-- [ ] Zustand
-
+    - [ ] Context API
+    - [ ] Redux Toolkit
+    - [ ] Zustand
 17. [ ] Create Custom Hooks
+    - [ ] useFetch
+    - [ ] useGlobalContext
 18. [ ] Admin Page
 
 ## Resources
