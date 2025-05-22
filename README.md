@@ -1,5 +1,7 @@
 # An eCommerce store with ReactJS
 
+![image](https://github.com/valenzsa/react-ecommerce-store/blob/main/src/assets/category.png)
+
 This is a work in progress. The todo items will grow as it continuous or as needed basis.
 
 ## Getting Started
